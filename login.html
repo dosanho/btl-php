@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/login.css">
+   
+    <title>Login</title>
+</head>
+
+<body>
+    <style>
+        .errorMessage{
+            color: red;
+        }
+    </style>
+    <header>
+        <div class="container-cus container-header">
+            <div class="header">
+                <div class="h-logo">
+                    <a href="/index.html"><img src="/img/logo-b2c.jpg" alt=""></a>
+                </div>
+                <div class="header-r">
+                    <div class="h-menu-t">
+                        <div>
+                            <a href=""><i class="fas fa-heart"></i> Wishlist</a>
+                        </div>
+                    </div>
+                    <div class="h-menu align-items-center">
+                        <div class="h-menu-left">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <nav class="navbar-expand-lg navbar-light">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/category.html">TV</a>
+                                            
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Tủ lạnh</a>
+                                            <div class="hidden-menu-child">
+                                                <div class="h-menu-child">
+                                                    <ul>
+                                                        <li>Tủ lạnh Instaview Door-in-Door™</li>
+                                                        <li>Tủ lạnh Door-in-Door™</li>
+                                                        <li>Tủ lạnh Side-by-Side</li>
+                                                        <li>Tủ lạnh Ngăn đá trên</li>
+                                                        <li>Tủ lạnh French Door</li>
+                                                        <li>Tủ lạnh Ngăn đá dưới</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Điều hòa</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Máy giặt</a>
+                                        </li>
+                                        <li class="nav-item h-span"><span class="nav-link">|</span></li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Hỗ trợ</a>
+                                            <div class="hidden-menu-child">
+                                                <div class="h-menu-child">
+                                                    <div class="h-menu-child-item">
+                                                        <a href="#">Hỗ trợ <i class="fas fa-angle-right"></i></a>
+                                                        <a href="#">Đăng ký thông tin sản phẩm <i
+                                                                class="fas fa-angle-right"></i></a>
+                                                        <a>Hướng dẫn & tải về</a>
+                                                        <ul>
+                                                            <li><a href="#">Thư viện trợ giúp</a></li>
+                                                            <li><a href="#">Video hướng dẫn</a></li>
+                                                            <li><a href="#">Hướng dẫn sử dụng</a></li>
+                                                            <li><a href="#">Cập nhật phần mềm</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="h-menu-child-item h-border-menu">
+                                                        <a>Liên hệ với chúng tôi</a>
+                                                        <ul>
+                                                            <li><a href="#">Chat & Email</a></li>
+                                                            <li><a href="#">Điện thoại</a></li>
+                                                            <li><a href="#">Kiểm tra tình trạng</a></li>
+                                                            <li><a href="#">Khảo sát ý kiến khách hàng</a></li>
+                                                        </ul>
+                                                        <a class="margin-a">Dịch vụ sửa chữa</a>
+                                                        <ul>
+                                                            <li><a href="#">Đặt lịch sửa chữa</a></li>
+                                                            <li><a href="#">Theo dõi tình trạng sửa chữa</a></li>
+                                                            <li><a href="#">Tìm nơi sửa chữa</a></li>
+                                                            <li><a href="#">Chính sách bảo hành</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="h-menu-child-item h-border-menu">
+                                                        <a>Hỗ trợ bổ sung</a>
+                                                        <ul>
+                                                            <li><a href="#">Linh kiện & phụ kiện</a></li>
+                                                            <li><a href="#">Thông báo</a></li>
+                                                        </ul>
+                                                        <a href="#" class="margin-a">Hỗ trợ cá nhân <i class="fas fa-angle-right"></i></a>
+                                                        <ul>
+                                                            <li><a href="#">Thông tin cá nhân</a></li>
+                                                            <li><a href="#">Sản phẩm đã đăng ký</a></li>
+                                                            <li><a href="#">Theo dõi các yêu cầu</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="h-logo-m">
+                            <img src="/img/logo-b2c-m.jpg" alt="">
+                        </div>
+                        <div class="h-menu-right">
+                            <ul>
+                                <li><a><i class="far fa-user"   data-toggle="modal" 
+                                    data-target="#form-login"></i></a></li>
+                                <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#" id="h-btn-search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-search" id="h-search">
+                <div class="h-close-search"><a href="#" class="h-btn-close-search"><i class="fal fa-times"></i></a>
+                </div>
+                <div class="h-search-content">
+                    <h2>Bạn cần hỗ trợ ?</h2>
+                    <div class="h-search-input">
+                        <form action="">
+                            <input type="text" placeholder="Tìm kiếm trên LG" />
+                            <button type="button" class="h-btn-search"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="h-keyword-field row">
+                        <div class="h-recently-keyword col-sm-6">
+                            <div class="h-recently-head">
+                                <div class="head-keyword">Tìm kiếm gần đây</div>
+                                <div class="clear-keyword">Xóa tất cả</div>
+                            </div>
+
+                        </div>
+                        <div class="most-searched col-sm-6">
+                            <div class="head-keyword">Tìm kiếm nhiều nhất</div>
+                            <div class="most-item">
+                                <a href="">FC1409S2W</a>
+                                <a href="">A5UW42GFA1</a>
+                                <a href="">GR-B247JS</a>
+                                <a href="">Màn hình ultragear</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+ 
+    <div class="main">
+       <div class="container">
+        <div class="l-page-desgin">
+            <div class="l-detail-page">
+               <div class="l-themes-login-page"> <h1>Đăng nhập</h1></div>
+               
+                <div class="l-themes-register-page"><h1><a href="register.html">Đăng ký</a></h1></div>
+            </div>
+        <form method="get" id="m-form-login-main">
+          <div class="form-login-input-page">
+            <div class="l-themes-page"><label for="username">Tài khoản *</label></div>
+            <input type="text"  id="username" placeholder="Nhập tài khoản *" name="username">
+            <div class="modal-errorMessage">
+                <span class="errorMessage"></span>
+            </div>
+          </div>
+          <div class="form-login-input-page">
+            <div class="l-themes-page"><label for="password">Mật khẩu *</label></div>
+            <input type="password" id="password" placeholder="Nhập mật khẩu *" name="password">
+            <div class="modal-errorMessage">
+                <span class="errorMessage"></span>
+            </div>
+          </div>
+      
+         <div class="l-list-button-page">  
+             <div class="l-button-login">
+                <button type="submit" id="login" class="login">Đăng nhập</button>
+             </div>   
+             <div class="l-footer-page">
+                <div class="forgot-password-page"><a href="./forgot.html">Quên mật khẩu?</a></div>
+             </div>     
+         </div>
+        </form>
+      </div>
+       </div>
+    </div>
+    <footer>
+        <div class="container-cus footer-t">
+            <p>Giá cả, chương trình khuyến mãi có thể thay đổi tùy theo cửa hàng (bao gồm cả cửa hàng trực tuyến).
+                Giá có thể thay đổi mà không cần thông báo. Số lượng có hạn. Kiểm tra với các nhà bán lẻ để biết mức
+                giá cuối cùng.</p>
+            <hr>
+            <p><strong>Với những khu vực áp dụng giãn cách Xã hội theo yêu cầu của các Cơ quan Nhà nước có thẩm
+                    quyền, thời gian giao hàng (từ 03 đến 07 ngày) sẽ được tính kể từ ngày chấm dứt giãn cách Xã
+                    hội.</strong></p>
+            <p>LG Ti Vi, Máy Tính, Thiết Bị Gia Dụng, Điều Hòa Nhiệt Độ Và Điện Thoại Di Động.</p>
+            <p>LG Việt Nam cung cấp những thiết bị âm thanh và hình ảnh tối ưu, những thiết bị nghe nhìn đáp ứng cho
+                chuẩn mực giải trí tại nhà. Thưởng thức những bộ phim hay nhất, những màn hành động gay cấn, chương
+                trình thể thao đẳng cấp quốc tế,… trên <a href="#">các loại tivi</a> LG chắc chắn sẽ làm bạn hài
+                lòng.</p>
+            <p>LG Việt Nam luôn không ngừng sáng tạo để mang đến những sản phẩm giải trí tiên tiến với công nghệ 3D
+                và SmartTV nhằm đáp ứng tốt nhất những tiêu chuẩn giải trí số và đưa bạn đến thế giới giải trí bất
+                tận trên Internet.</p>
+            <p>Không cần đi đâu xa, tận hưởng cả thế giới giải trí số ngay tại căn hộ ấm cúng để thưởng thức những
+                hình ảnh sắc nét nhất cùng hiệu ứng âm thanh sống động với những sản phẩm từ LG.</p>
+            <hr>
+            <div class="footer-m align-items-center">
+                <div class="f-national">
+                    <img src="./img/vietnam.png" alt=""><a href="#">Việt Nam</a>
+                </div>
+                <div class="f-social">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="container-cus footer-b">
+                <div class="footer-b-r">
+                    <ul>
+                        <li><a href="">Sitemap</a></li>
+                        <li><a href="">Quyền riêng tư</a></li>
+                        <li><a href="">Phát lý</a></li>
+                        <li><a href="">Chính sách mua hàng và đổi trả</a></li>
+                    </ul>
+                    <p>Bản quyền © 2021 Công ty HHH bảo lưu mọi quyền</p>
+                    <p>ĐT: 024 3934 5151</p>
+                    <p>Email: <a href="mailto:tuanhieu342000@gmail.com">tuanhieu342000@gmail.com</a></p>
+                </div>
+                <fiv class="footer-b-l">
+                    <img src="./img/icon-vn01.png" alt="">
+                </fiv>
+            </div>
+        </div>
+    </footer>
+    <!-- login -->
+<div class="modal fade" id="form-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog login-desgin" role="document">
+      <div class="modal-content">
+  
+        <div class="modal-body-desgin">
+              <div class="l-detail">
+                  <h3>Login</h3>
+                      <div class="l-exits">
+                              <i class="fas fa-times" data-dismiss="modal"></i>                       
+                      </div>
+              </div>
+          <form method="get">
+            <div class="form-login-input">
+              <input type="text"  id="user-name" placeholder="User name*" name="username">
+            </div>
+            <div class="form-login-input">
+              <input type="password" id="password" placeholder="Password*" name="password">
+            </div>
+            <div class="l-modal-footer-detail">
+              <div class="forgot-password"><a  data-toggle="modal"
+                  data-target="#form-forgot" href="#" data-dismiss="modal">Forgot your password?</a></div>
+           </div>
+           <div class="l-list-button">
+               <div class="l-button-login">
+                  <button type="submit" id="login" class="login">Login</button>
+               </div>
+               <div class="l-button-register">
+                  <button type="button" data-toggle="modal" id="register" class="register"
+                   data-target="#form-register"  data-dismiss="modal">Register</button>
+  
+               </div>          
+           </div>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <!-- register -->
+  <div  class="modal fade" id="form-register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document" >
+        <div class="modal-content">
+    
+          <div class="modal-body-desgin" >
+                <div class="l-detail">
+                    <h3>Register</h3>
+                      <div class="l-exits">
+                          <i class="fas fa-times" data-dismiss="modal"></i>                       
+                  </div>
+                </div>
+            <form>
+              <div class="form-login-input">
+                <input type="text"  id="user-name" placeholder="User name*">
+              </div>
+              <div class="form-login-input">
+                <input type="password" id="password" placeholder="Password*">
+              </div>
+              <div class="form-login-input">
+                  <input type="text" id="full-name" placeholder="Full Name">
+              </div>
+              <div class="form-login-input">
+                  <input type="email" id="email" placeholder="Email">
+              </div>
+              <div class="form-login-input">
+                  <input type="number" id="phone" placeholder="Phone">
+              </div>
+             <div class="l-list-button">
+                 <div class="l-button-login">
+                    <button type="button" data-toggle="modal" id="login" class="login"
+                     data-target="#form-login" data-dismiss="modal">Register</button>
+                 </div>
+                 <div class="l-button-register">
+                  
+                    <button type="button" data-toggle="modal" id="register" class="register"
+                     data-target="#form-login" data-dismiss="modal">Login</button>
+    
+                 </div>          
+             </div>
+            </form>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  
+  
+    <!-- forgot -->
+    <div class="modal fade" id="form-forgot" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog login-desgin" role="document">
+        <div class="modal-content">
+    
+          <div class="modal-body-desgin">
+                <div class="l-detail-forget">
+                    <h3>Forgot your password?</h3>
+                     <p>We will send you an email to reset your password.</p> 
+                        <div class="l-exits">
+                                <i class="fas fa-times" data-dismiss="modal"></i>                       
+                        </div>
+                </div>
+            <form method="get">
+              <div class="form-login-input">
+                <input type="email"  id="email" placeholder="Email*" name="email">
+              </div>
+             <div class="l-list-button-forget">
+                 <div class="l-button-login-forget">
+                    <button type="button" id="submit" class="submit">Submit</button>
+                    <button type="button" id="cancel" class="cancel" data-toggle="modal" data-target="#form-login" data-dismiss="modal">Cancel</button>
+                 </div>
+                 <div class="l-button-register"> 
+                    <button type="button" data-toggle="modal" id="register"
+                     data-target="#form-register" class="register"  data-dismiss="modal">Register</button>
+    
+                 </div>          
+             </div>
+            </form>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/validate.js"></script>
+    <script>
+        validation({
+            form: "#m-form-login-main",
+            error: ".errorMessage",
+            formGroupSelector: '.form-login-input-page',
+            rules: [
+                validation.isRequired("#username", "Bạn hãy nhập tài khoản"),
+                validation.isRequired("#password", "Bạn hãy nhập mật khẩu"),
+                validation.isMinLength("#password", min = 6 ,`số kí tự phải lớn hơn hoặc bằng ${min}`)
+            ],
+            onSubmit: function (data) {
+                console.log(data)
+            }
+        })
+    </script>
+</body>
+</html>
